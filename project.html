@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bachata</title>
+    <style>
+      hr {
+        height: 1px;
+        border: 0;
+        background-color: rgb(81, 28, 45);
+      }
+      .main {
+        font-family: "Raleway", sans-serif;
+        border-radius: 10px;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+        color: rgb(81, 28, 45);
+        background: -webkit-radial-gradient(
+          circle,
+          hsla(0, 0%, 100%, 1) 0%,
+          hsla(313, 64%, 69%, 1) 100%
+        );
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid rgb(81, 28, 45);
+        padding: 20px;
+        border-radius: 4px;
+      }
+      .subtitle {
+        text-align: center;
+      }
+      .pic {
+        position: ;
+        margin: 0 auto;
+        display: block;
+      }
+      .text {
+        line-height: 1.5;
+        font-size: 23px;
+      }
+      .link {
+        color: rgb(81, 28, 45);
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .btn {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 42px;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        background: rgba(81, 28, 45, 0.87);
+        transition: opacity 150ms ease;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">My passion is dancing</h1>
+      <h2 class="subtitle">Especially Bachata</h2>
+      <hr />
+      <img src="./images.jpg" alt="dancing couple" class="pic" />
+      <hr />
+      <p class="text">
+        Bachata is a style of social dance from the Dominican Republic which is
+        now danced all over the world.In partnering, the lead can decide whether
+        to perform in open, semi-closed or closed position. Dance moves or step
+        variety strongly depend on the music (such as the rhythms played by the
+        different instruments), setting, mood, and interpretation. Unlike salsa,
+        bachata dance does not usually include many turn patterns.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Bachata_(dance)"
+        target="_blank"
+        class="link"
+        >Read more on Wikipedia</a
+      >
+      <button class="btn">Learn bachata</button>
+    </div>
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert("Thanks, " + name + " , we will be in touch.");
+        } else {
+          alert("Error!");
+        }
+      });
+    </script>
+  </body>
+</html>
