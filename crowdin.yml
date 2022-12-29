@@ -1,0 +1,3 @@
+files:
+  - source: /*.html
+    translation: /trans/%two_letters_code%
